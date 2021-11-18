@@ -6,7 +6,7 @@ public:
     string name;
     int gheymat;
     void showInfos(string name1){
-        cout<<"Coding by name is mehdi pariz.."<<name1<<endl;
+        cout<<"Mehdi Pariz"<<name1<<endl;
     }
     void telName();
 };
@@ -148,13 +148,7 @@ int main() {
             if (hip=='y')
                 goto v;
         }
- /*
-    cout<<"Name kala ra vered nemead : ";
-    getline(cin,kala5.name);
-    cout<<"Geymate kala ra vered nemead : ";
-    cin>>kala5.gheymat;
-    cout<<"Name kala : "<<kala5.name<<"\t"<<"Geymate kala : "<<kala5.gheymat<<endl;
-   */
+
     kala1.telName();
 
     return 0;
