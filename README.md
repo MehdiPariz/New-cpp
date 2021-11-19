@@ -1,1 +1,1 @@
-This is a small project store whith C++
+This is a small project store whit C++
