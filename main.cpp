@@ -6,15 +6,15 @@ public:
     string name;
     int gheymat;
     void showInfos(string name1){
-        cout<<"Mehdi Pariz"<<name1<<endl;
+        cout<<"\t\t\t\t\t\t\t\t\t\tMehdi Pariz"<<name1<<endl;
     }
     void telName();
 };
 void kala::telName() {
-    cout<<"\n\nTanke you for injoing.."<<endl;
+    cout<<"\n\nTanke you"<<endl;
 }
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "\t\t\t\t\t\t\t\t\tWeb and Software Developer" << std::endl;
     r:
     q:
     x:
@@ -37,21 +37,21 @@ int main() {
     char t;
     char k;
     char hip;
-    kala1.name = "panir";
+    kala1.name = "T-shirts";
     kala1.gheymat = 8700;
-    kala2.name = "mast";
+    kala2.name = "Men's shoes";
     kala2.gheymat = 11000;
-    kala3.name = "asal";
+    kala3.name = "Women's shoes";
     kala3.gheymat = 55000;
-    kala4.name = "shir";
+    kala4.name = "Women's bags";
     kala4.gheymat = 4500;
     kala1.showInfos("");
-    cout << "\n\nLISTE KALAHAIE MOJOD\n*********************\n\n";
-    cout << "1. Kalaye mojod : " << kala1.name << "\tGeymate kala : " << kala1.gheymat << endl;
-    cout << "2. Kalaye mojod : " << kala2.name << "\tGeymate kala : " << kala2.gheymat << endl;
-    cout << "3. Kalaye mojod : " << kala3.name << "\tGeymate kala : " << kala3.gheymat << endl;
-    cout << "4. Kalaye mojod : " << kala4.name << "\tGeymate kala : " << kala4.gheymat << endl;
-    cout << "Lotfan az beine adade 1 ta 4 entekhaab nemaed : ";
+    cout << "\n\nList of available products\n*********************\n\n";
+    cout << "1. Product available : " << kala1.name << "\tPrice : " << kala1.gheymat << endl;
+    cout << "2. Product available : " << kala2.name << "\tPrice : " << kala2.gheymat << endl;
+    cout << "3. Product available : " << kala3.name << "\tPrice : " << kala3.gheymat << endl;
+    cout << "4. Product available : " << kala4.name << "\tPrice : " << kala4.gheymat << endl;
+    cout << "Please choose from 1 to 4 : ";
     cin >> a;
     switch (a) {
         case 1:
@@ -67,86 +67,103 @@ int main() {
             cout << kala4.name << "   " << kala4.gheymat << endl;
             break;
         default:
-            cout << " ERROR";
+            cout << " The selected number is not correct. Please choose a number from 1 to 4";
     }
     s:
     if (a == 1) {
 
-        cout << "Lotfan tedede panir ra vared nemaead : ";
+        cout << "Please select the number of T-shirts : ";
         cin >> p;
         for (int i = 0; i < p; ++i) {
             cout << i + 1 << ". " << kala1.name << "   " << kala1.gheymat << endl;
             sum = sum + kala1.gheymat;
         }
-        cout << "Geymate kol : " << sum << endl;
-        cout << "Mikhahid gaheimate panir ra tekrar konid(y/n) : " << endl;
+        cout << "Total price : " << sum << endl;
+        cout << "Do you want to continue calculating the t-shirt?(yes/no) : " << endl;
         cin >> u;
         if (u=='y')
             goto s;
-        cout << "Mikhahid be safhe asli bazgardid(y/n) : " << endl;
+        cout << "Do you want to return to the main page?(yes/no) : " << endl;
         cin>>m;
         if (m=='y'){
             goto r;
         }
         temp=temp+sum;
-        cout<<"Gheimate kole kalaha : "<<temp;
+        cout<<"Total price of products : "<<temp;
         tin=tin+temp;
-        cout<<"\n\nJame kole gheimate kalaha : "<<tin;
+        cout<<"\n\nTotal price of all products : "<<tin;
     }
     f:
         if (a==2){
         int c;
-        cout<<"Lotfan tedede mast ra vared nemaead : ";
+        cout<<"Please select the number of men's shoes : ";
         cin>>c;
         for (int i = 0; i < c; ++i) {
             cout<<i+1<<". "<<kala2.name<<"   "<<kala2.gheymat<<endl;
             sum=sum+kala2.gheymat;
         }
-        cout<<"Geymate kol : "<<sum<<endl;
-        cout << "Mikhahid edame dahid : " << endl;
+        cout<<"Total price : "<<sum<<endl;
+        cout << "Do you want to continue calculating the price of men's shoes?(yes/no) : " << endl;
         cin>>o;
         if (o=='y')
             goto f;
-        cout << "Mikhahid edame dahid : " << endl;
+       cout << "Do you want to return to the main page?(yes/no) : " << endl;
         cin>>l;
-        if (l=='y')
+        if (l=='y'){
             goto q;
+             }
+        temp=temp+sum;
+        cout<<"Total price of products : "<<temp;
+        tin=tin+temp;
+        cout<<"\n\nTotal price of all products : "<<tin;
+    
     } z:
         if(a==3){
         int j;
-        cout<<"Lotfan tedede asal ra vared nemaead : ";
+        cout<<"Please select the number of women's shoes : ";
         cin>>j;
         for (int i = 0; i < j; ++i) {
             cout<<i+1<<". "<<kala3.name<<"   "<<kala3.gheymat<<endl;
             sum=sum+kala3.gheymat;
         }
-        cout<<"Geymate kol : "<<sum<<endl;
-        cout << "Mikhahid edame dahid : " << endl;
+        cout<<"Total price : "<<sum<<endl;
+        cout << "Do you want to continue calculating the price of women's shoes?(yes/no) : " << endl;
         cin>>w;
         if (w=='y')
             goto z;
-        cout << "Mikhahid edame dahid : " << endl;
+        cout << "Do you want to return to the main page?(yes/no) : " << endl;
         cin>>t;
-        if (t=='y')
-            goto x;
+        if (t=='y'){
+           goto x;
+		}
+		    temp=temp+sum;
+        cout<<"Total price of products : "<<temp;
+        tin=tin+temp;
+        cout<<"\n\nTotal price of all products : "<<tin;
+    
     } j:
         if(a==4) {
             int d;
-            cout << "Lotfan tedede shir ra vared nemaead : ";
+            cout << "Please select the number of women's bags : ";
             cin >> d;
             for (int i = 0; i < d; ++i) {
                 cout << i + 1 << ". " << kala4.name << "   " << kala4.gheymat << endl;
                 sum = sum + kala4.gheymat;
             }
-            cout << "Geymate kol : " << sum << endl;
-            cout << "Mikhahid edame dahid : " << endl;
+            cout << "Total price : " << sum << endl;
+            cout << "Do you want to continue calculating the price of women's bags?(yes/no) : " << endl;
             cin>>k;
             if (k=='y')
                 goto j;
-            cout << "Mikhahid edame dahid : " << endl;
+            cout << "Do you want to return to the main page?(yes/no) : " << endl;
             cin>>hip;
-            if (hip=='y')
+            if (hip=='y'){
                 goto v;
+			}
+			  temp=temp+sum;
+        cout<<"Total price of products : "<<temp;
+        tin=tin+temp;
+        cout<<"\n\nTotal price of all products : "<<tin;
         }
 
     kala1.telName();
